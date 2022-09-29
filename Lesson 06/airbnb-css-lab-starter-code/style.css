@@ -1,0 +1,134 @@
+body {
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Colors */
+/* Redish / Pink: #ff5358 */
+/* Dark red for button hover: #e00007 */
+/* Very light gray for backgrounds: #efefef */
+/* Very light gray for borders: #dbdbdb */
+/* Dark gray for footer: #0e0f0f */
+/* White for text and backgrounds: #FFFFFF */
+
+
+/* Background image links */
+/* Hero: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg */
+/* Fitzroy: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg */
+/* St. Kilda: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg  */
+/* CBD: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg */
+
+.airBnB-topnav {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.airBnB-topnav img{
+  max-width:100px;
+  padding: 10px 30px;
+}
+
+.airBnB-topnav nav ul{
+  list-style:none;
+  margin:0;
+  padding: 0;
+  display:flex;
+  gap:30px;
+  margin-right:30px;
+}
+
+.airBnB-topnav nav ul li a {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.airbnb-hero {
+  background-image: url(melbourne.jpg);
+  min-height: 550px;
+  background-position: center;
+  background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.airBnB-hero-box {
+ color: white;
+ max-width: 400px;
+ display:flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.airBnB-hero-box h1 {
+  font-size: 65px;
+  text-align: center;
+ }
+
+ .airBnB-hero-box p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+ }
+
+/* Button */
+
+.airBnB-button {
+  display:block;
+  background: #ff5358;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 3px;
+ }
+
+ .airBnB-button:hover {
+  background: #e00007;
+ }
+
+ .airbnb-locals {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:30px;
+  padding: 40px 10px;
+  background: #efefef;
+ }
+
+ /*  
+ .airbnb-locals-column {
+ }*/
+
+ .airbnb-locals-note {
+  background:white;
+  border: 1px solid #dbdbdb;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+ }
+
+ .airbnb-locals-note h1 {
+  background:#efefef;
+  padding: 10px 20px;
+  font-size: 14px;
+  grid-column: span 2;
+ }
+
+.airbnb-locals-note img {
+  margin:10px;
+ }
+
+ .airbnb-locals-note p {
+  padding-right:10px;
+ }
