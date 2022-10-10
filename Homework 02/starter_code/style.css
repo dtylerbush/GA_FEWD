@@ -5,11 +5,16 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+body {
+  margin: 0px;
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
   padding: 15px 0;
 }
+
 
 /* Fonts, classes are so I can reuse the styles on a variety of elements */
 .merriweather { font-family: 'Merriweather', serif; }
@@ -24,3 +29,139 @@ p {
 
 /* Background Image */
 /* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
+
+.SiteHeader {
+  background-color: black;
+  padding: 10px 30px;
+  border-bottom: 5px solid #f2ff00;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SiteHeader h1 a {
+  font-size: 32px;
+  font-family: 'Merriweather', serif;
+  color: #f2ff00;
+  text-decoration: none;
+}
+
+.MainNav ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+.MainNav li,
+.MainNav li a,
+.MainNav li a:visited {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+  line-height: 1em;
+}
+
+.MainNav li a:hover {
+  color:#f2ff00;
+}
+
+.MainNav-featured {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  padding-top: 0px;
+}
+.TaglineBar {
+  background: lightgray;
+  text-align: center;
+  padding: 20px 20px 25px 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  color: black;
+  line-height: 1em;
+}
+
+.underline-yellow {
+  border-bottom: 3px solid; 
+  border-color: #f2ff00;
+}
+
+.hero-area {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg') center center no-repeat;
+  min-height: 60%;
+  background-size: cover;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-box {
+  background-color: rgba(255, 255, 255, 0.822);
+  width: 380px;
+  height: 230px;
+  padding: 45px;
+  margin: 25px;
+  font-family: 'Lato', sans-serif;
+  box-shadow: 0 0 10px black;
+}
+
+.hero-btn {
+  display: block;
+  background-color: #f2ff00;
+  border: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 2px solid #ffd900;
+  border-radius: 5px;
+  padding: 10px 30px;
+  line-height: 1em;
+}
+
+.three-column-box {
+  display: flex;
+  font-family: 'Lato',sans-serif;
+}
+
+.three-column-box h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+}
+
+.three-column-box-container {
+  border-right: 1px solid lightgray;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.three-column-box-three {
+  border-right: none;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.gray-btn {
+  display: block;
+  background-color: lightgray;
+  border: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 2px solid darkgray;
+  border-radius: 5px;
+  padding: 10px 30px;
+  line-height: 1em;
+}
+
+
+.site-footer {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  font-family: 'Lato', sans-serif;
+}
