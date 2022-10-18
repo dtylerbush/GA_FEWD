@@ -187,21 +187,28 @@ body {
 
 
 /* Create a media query to target print only */
-
-    /* Hide Navigation */
-
-
-
-
-    /* Hide Upsells */
-
-
+@media print {
+    .pcl_topnav,
+    .pcl_navBlock,
+    .pcl_productbar {
+    display:none;
+}
+    
     /* Set widths */
-
-
+.pcl_invoice_total {
+    border-top: 2px solid black;
+}
+.pcl_invoice_items tbody td {
+    border-bottom: 1px solid grey;
+}
     /* Add borders to the table */
-
-
+.pcl_contentOuter {
+    width: 7in;
+}
+.pcl_siteHeader {
+    color: black
+}
+}
 
 
 
