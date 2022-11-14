@@ -14,7 +14,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/wmn3jsm.css">
 
 </head>
 
@@ -22,27 +24,57 @@
 
 <body>
 
-<div class="aclu_box">
-<p class="aclu">ACLU</p>
+<header class="aclu-container">
+<h1 class="aclu">ACLU</h1>
+</header>
+
+<section class="mission-container">
+<p class="mission">The ACLU dares to create a more perfect union — beyond one person, party, or side. Our mission is to realize this promise of the United States Constitution for all and expand the reach of its guarantees.</p>
+</section>
+
+<div class="top-issues"> 
+    <p>Top Issues</p>
 </div>
 
-<p class="mission">The ACLU dares to create a more perfect union — beyond one person, party, or side. Our mission is to realize this promise of the United States Constitution for all and expand the reach of its guarantees.</p>
-
-<h1>Top Issues</h1>
-
-<img src="images/civil-liberties.jpg" alt="Civil Liberties" class="art" >
-
-<p>The Capital Punishment Project works toward the repeal of the death penalty in the United States through strategic litigation, advocacy, public education, and training programs for capital defense teams.</p>
-
+<section class="issue-container">
+<div>
+<img src="images/capital-punishment.jpg" alt="capital punishment" class="issue-image">
+<article class="issue-description-box">
+    <p class="issue-description">The Capital Punishment Project works toward the repeal of the death penalty in the United States through strategic litigation, advocacy, public education, and training programs for capital defense teams.</p>
+</article>
+</div> 
+<div class="issue-button-box">
 <p>Learn about what's happening across the most pressing civil liberties issues of our time, and what you can do.</p>
+<button class="issue-button" id="capital">Capital Punishment</button>
+<button class="issue-button">Civil Liberties</button>
+<button class="issue-button">Criminal Law Reform</button>
+<button class="issue-button">Disability Rights</button>
+<button class="issue-button">Free Speech</button>
+<button class="issue-button">HIV</button>
+<button class="issue-button">Human Rights</button>
+<button class="issue-button">Immigrants’ Rights</button>
+<button class="issue-button">Juvenile Justice</button>
+<button class="issue-button">LGBTQ Rights</button>
+<button class="issue-button">National Security</button>
+<button class="issue-button">Prisoners’ Rights</button>
+<button class="issue-button">Privacy & Technology</button>
+<button class="issue-button">Racial Justice</button>
+<button class="issue-button">Religious Liberty</button>
+<button class="issue-button">Reproductive Freedom</button>
+<button class="issue-button">Smart Justice</button>
+<button class="issue-button">Voting Rights</button>
+<button class="issue-button">Women’s Rights</button>
+</div>
+</section>
 
-<footer>
+
+<footer class="aclu-footer">
 
 <h3>American Civil Liberties Union</h3>
 
 </footer>
 
-
+<script  src="./script.js"></script>
 </body>
 </html>
 
